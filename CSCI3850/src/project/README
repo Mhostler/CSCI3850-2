@@ -1,0 +1,108 @@
+README
+Names:
+Michael Hostler - file IO and threading, term sorting
+Zachary Maly - Stemming and Stopword script, Occurrence sorting
+
+to compile
+javac *.java
+
+To run
+java CSCI3850p0.java (number 0 1 or 2)
+0: default run, no stopword filter or stemming also used when no key is given
+1: stopword filter enabled, no stemming
+2: stopword filter and stemmer enabled
+
+Total time
+
+Meaningfulness:
+2) said
+3) government, reuter, reuters, said
+4) govern, offici, year, state, will, us, reuter, said
+
+Outputs:
+---------------------------------------
+Without removing Stop words or stemming:
+ Unique Terms: 76381
+ Program Time: 19569
+
+Most Frequent Terms: 
+  that : 15237
+  on : 15563
+  for : 18361
+  said : 26110
+  and : 41109
+  a : 44907
+  in : 46675
+  of : 52451
+  to : 53332
+  the : 121741
+
+Least Frequent Terms: 
+  0022 : 1
+  0020 : 1
+  002 : 1
+  0016 : 1
+  0012 : 1
+  0 : 1
+  0000 : 1
+  0004 : 1
+  0006 : 1
+  0008 : 1
+  
+--------------------------------------
+After Removing stop words:
+ Unique Terms: 76257
+ Program Time: 12744
+
+Most Frequent Terms: 
+  last : 3589
+  government : 3605
+  one : 3728
+  new : 4094
+  two : 4478
+  will : 5457
+  us : 5752
+  reuter : 6120
+  reuters : 7334
+  said : 26110
+
+Least Frequent Terms: 
+  0022 : 1
+  0020 : 1
+  002 : 1
+  0016 : 1
+  0012 : 1
+  0 : 1
+  0000 : 1
+  0004 : 1
+  0006 : 1
+  0008 : 1
+  
+-------------------------------------
+After both removing stop words and stemming:
+ Unique Terms: 60813
+ Program Time: 12646
+
+Most Frequent Terms: 
+  govern : 4036
+  offici : 4365
+  two : 4479
+  year : 4784
+  state : 5346
+  will : 5557
+  new : 5621
+  us : 7505
+  reuter : 13454
+  said : 26111
+
+Least Frequent Terms: 
+  0022 : 1
+  0020 : 1
+  002 : 1
+  0016 : 1
+  0012 : 1
+  0 : 1
+  0000 : 1
+  0004 : 1
+  0006 : 1
+  0008 : 1
